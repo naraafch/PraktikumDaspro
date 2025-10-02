@@ -17,6 +17,8 @@ public class ifCetakKRSNo26 {
             System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
         }
 
+        String modifikasi = (uktLunas) ? "Pembayaran UKT Terverifikasi\nSilahkan cetak KRS dan minta tanda tangan DPA" : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
+        System.out.print(modifikasi);
     }
     
 }
