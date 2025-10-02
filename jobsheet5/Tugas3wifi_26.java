@@ -11,18 +11,24 @@ public class Tugas3wifi_26 {
         System.out.print("Pengguna (Dosen/Mahasiswa): ");
         pengguna = input.nextLine();
 
-        if (pengguna.equals("Dosen")) {
+        if (pengguna.equalsIgnoreCase("Dosen")) { 
             System.out.println("Akses WiFi diberikan");
-        } else if (pengguna.equals("Mahasiswa")) 
+        } else if (pengguna.equalsIgnoreCase("Mahasiswa")) {
             System.out.print("Masukkan jumlah SKS: ");
-            sks= input.nextInt();
-            if (sks>=12) {
-                System.out.println("Akses WIFI diberikan");
+            sks = input.nextInt();
+
+            if (sks >= 12) {
+                System.out.println("Akses WiFi diberikan");
             } else {
                 System.out.println("Akses ditolak, SKS kurang dari 12");
-            }     
-        
-            input.close();
+            }
+        } else {
+            System.out.println("Akses ditolak");
+        }
+
+        input.close();
+
         }
     }
+
  
